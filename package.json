@@ -4,6 +4,7 @@
   "description": "An extension to run a command when an editor group is active",
   "version": "1.0.0",
   "icon": "Icon.png",
+  "publisher": "itshare4u",
   "engines": {
     "vscode": "^1.75.0"
   },

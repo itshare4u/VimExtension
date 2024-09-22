@@ -1,7 +1,7 @@
 {
   "name": "vim-extension",
   "displayName": "Vim Extension",
-  "description": "An extension to run a command when an editor group is active",
+  "description": "An extension to keep your input method in normal mode",
   "version": "1.0.0",
   "icon": "Icon.png",
   "publisher": "itshare4u",

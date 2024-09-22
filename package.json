@@ -1,0 +1,57 @@
+{
+  "name": "vim-extension",
+  "displayName": "Vim Extension",
+  "description": "An extension to run a command when an editor group is active",
+  "version": "0.0.1",
+  "icon": "Icon.png",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "extensionDependencies": [
+    "vscodevim.vim"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/your-repo-name.git"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.runCommandOnEditorGroupActive",
+        "title": "Run Command on Editor Group Active"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Vim Extension Configuration",
+      "properties": {
+        "vimExtension.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable the extension"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.19.0",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.4.0"
+  }
+}

@@ -2,7 +2,7 @@
   "name": "vim-extension",
   "displayName": "Vim Extension",
   "description": "An extension to keep your input method in normal mode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "Icon.png",
   "publisher": "itshare4u",
   "engines": {
